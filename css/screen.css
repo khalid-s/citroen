@@ -3,44 +3,45 @@
   clear: both;
 }
 
-/* line 3, screen.scss */
-.red-bg {
+/* line 4, screen.scss */
+#login {
+  margin-top: 60px;
   background: #d62c35;
-}
-
-/* line 6, screen.scss */
-.login {
   padding: 20px 0;
-  font-size: 14px;
+  font-size: 18px;
+  margin-bottom: 120px;
 }
-/* line 9, screen.scss */
-.login .seperator {
+/* line 10, screen.scss */
+#login .seperator {
   color: white;
   display: inline-block;
-  line-height: 8px;
-  font-size: 9px;
+  line-height: 12px;
+  font-size: 12px;
 }
-/* line 15, screen.scss */
-.login h1 {
+/* line 16, screen.scss */
+#login h1 {
   text-transform: uppercase;
   color: white;
   font: 'citroenregular', Arial, Helvetica, sans-serif;
   font-weight: normal;
-  font-size: 1.8em;
+  font-size: 42px;
+  line-height: 38px;
+  margin-bottom: 15px;
 }
-/* line 22, screen.scss */
-.login label {
+/* line 25, screen.scss */
+#login label {
+  margin: 10px 0 3px 0;
+  margin-top: 15px;
   text-transform: uppercase;
   color: white;
   display: inline-block;
-  margin: 10px 0 3px 0;
 }
-/* line 28, screen.scss */
-.login input {
+/* line 32, screen.scss */
+#login input {
   display: block;
 }
-/* line 29, screen.scss */
-.login .submit {
+/* line 33, screen.scss */
+#login .submit {
   display: block;
   text-align: center;
   margin: 0 auto;
@@ -54,63 +55,69 @@
   border-radius: 20px;
   font: 1em 'citroenregular', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
-}
-/* line 41, screen.scss */
-.login .submit:hover {
-  color: #b50020;
 }
 /* line 45, screen.scss */
-.login input[type=submit] {
+#login .submit:hover {
+  color: #b50020;
+}
+/* line 49, screen.scss */
+#login input[type=submit] {
+  border: none;
   display: block;
   text-align: center;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 30px;
   color: #d62c35;
   background: #fff;
   text-decoration: none;
-  padding: 7px 45px;
+  padding: 5px 45px;
+  text-transform: uppercase;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
-  font: 1em 'citroenregular', Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
+  font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
 }
-/* line 57, screen.scss */
-.login input[type=submit]:hover {
+/* line 62, screen.scss */
+#login input[type=submit]:hover {
   color: #b50020;
 }
-/* line 61, screen.scss */
-.login input[type=text], .login input[type=password] {
-  width: 180px;
+/* line 66, screen.scss */
+#login input[type=text], #login input[type=password] {
+  width: 325px;
   border: none;
-  line-height: 22px;
+  height: 28px;
+  line-height: 26px;
   padding: 2px 5px;
 }
-/* line 68, screen.scss */
-.login ul li {
+/* line 73, screen.scss */
+#login ul {
+  margin-top: 15px;
+}
+/* line 75, screen.scss */
+#login ul li {
   list-style: none;
   display: inline-block;
   padding: 5px 0;
-  font-size: 8px;
+  font-size: 12px;
 }
-/* line 73, screen.scss */
-.login ul li:first-child {
+/* line 80, screen.scss */
+#login ul li:first-child {
   padding-right: 8px;
 }
-/* line 76, screen.scss */
-.login ul li:last-child {
+/* line 83, screen.scss */
+#login ul li:last-child {
   position: relative;
   left: -3px;
   padding-left: 8px;
 }
-/* line 81, screen.scss */
-.login ul li a {
+/* line 88, screen.scss */
+#login ul li a {
   text-decoration: none;
   color: white;
-  text-transform: uppercase;
+  text-decoration: underline;
 }
-/* line 88, screen.scss */
-.login .center- {
-  width: 190px;
+/* line 95, screen.scss */
+#login .center- {
+  width: 325px;
   margin: 0 auto;
 }

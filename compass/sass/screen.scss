@@ -1,29 +1,33 @@
 @import 'compass';
 .clear-both{clear:both}
-.red-bg{
+
+#login{
+	margin-top: 60px;
 	background: #d62c35;
-}
-.login{
 	padding: 20px 0;
-	font-size: 14px;
+	font-size: 18px;
+	margin-bottom: 120px;
 	.seperator{
 		color:white;
 		display: inline-block;
-		line-height: 8px;
-		font-size: 9px;
+		line-height: 12px;
+		font-size: 12px;
 	}
 	h1{
 		text-transform: uppercase;
 		color:white;
 		font:'citroenregular', Arial, Helvetica, sans-serif;
 		font-weight: normal;
-		font-size: 1.8em;
+		font-size: 42px;
+		line-height: 38px;
+		margin-bottom: 15px;
 	}
 	label{
+		margin: 10px 0 3px 0;
+		margin-top: 15px;
 		text-transform: uppercase;
 		color:white;
 		display: inline-block;
-		margin: 10px 0 3px 0;
 	}
 	input{display: block}
 	.submit{
@@ -43,33 +47,36 @@
 			}
 		}
 	input[type=submit]{
+		border: none;
 		display: block;
 		text-align: center;
 		margin: 0 auto;
-		margin-top: 20px;
+		margin-top: 30px;
 		color: #d62c35;
 		background: #fff;
 		text-decoration: none;
-		padding:7px 45px;
-		@include border-radius(20px);
-		font: 1em 'citroenregular', Arial, Helvetica, sans-serif;
+		padding:5px 45px;
 		text-transform: uppercase;
+		@include border-radius(20px);
+		font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
 			&:hover{
 			color: #b50020;
 			}
 		}
 	input[type=text], input[type=password]{
-		width: 180px;
+		width: 325px;
 		border: none;
-		line-height: 22px;
+		height: 28px;
+		line-height: 26px;
 		padding: 2px 5px;
 	}
 	ul{
+		margin-top: 15px;
 		li{
 			list-style: none;
 			display: inline-block;
 			padding: 5px 0;
-			font-size: 8px;
+			font-size: 12px;
 			&:first-child{
 				padding-right: 8px;
 			}
@@ -81,12 +88,12 @@
 			a{
 				text-decoration: none;
 				color:white;
-				text-transform: uppercase;
+				text-decoration: underline;
 			}
 		}
 	}
 	.center-{
-		width: 190px;
+		width: 325px;
 		margin: 0 auto;
 	}
 }
