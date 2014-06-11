@@ -1,0 +1,761 @@
+@charset "UTF-8";
+/* CSS Document */
+
+Body{ background: #fafafa; margin: 0; font-family: Arial, Helvetica, sans-serif;}
+*{margin: 0; padding: 0;}
+a{ border: none;}
+a img{ border: none;}
+
+
+/********************************* FONTS *************************************************/
+
+
+
+
+@font-face {
+    font-family: 'citroenbold_italic';
+    src: url('../fonts/citroen_bold_italic-webfont.eot');
+    src: url('../fonts/citroen_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/citroen_bold_italic-webfont.woff') format('woff'),
+         url('../fonts/citroen_bold_italic-webfont.ttf') format('truetype'),
+         url('../fonts/citroen_bold_italic-webfont.svg#citroenbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'citroenbold';
+    src: url('../fonts/citroen_bold-webfont.eot');
+    src: url('../fonts/citroen_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/citroen_bold-webfont.woff') format('woff'),
+         url('../fonts/citroen_bold-webfont.ttf') format('truetype'),
+         url('../fonts/citroen_bold-webfont.svg#citroenbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'citroenitalic';
+    src: url('../fonts/citroen_italic-webfont.eot');
+    src: url('../fonts/citroen_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/citroen_italic-webfont.woff') format('woff'),
+         url('../fonts/citroen_italic-webfont.ttf') format('truetype'),
+         url('../fonts/citroen_italic-webfont.svg#citroenitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'citroenlight_italic';
+    src: url('../fonts/citroen_light_italic-webfont.eot');
+    src: url('../fonts/citroen_light_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/citroen_light_italic-webfont.woff') format('woff'),
+         url('../fonts/citroen_light_italic-webfont.ttf') format('truetype'),
+         url('../fonts/citroen_light_italic-webfont.svg#citroenlight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'citroenlight';
+    src: url('../fonts/citroen_light-webfont.eot');
+    src: url('../fonts/citroen_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/citroen_light-webfont.woff') format('woff'),
+         url('../fonts/citroen_light-webfont.ttf') format('truetype'),
+         url('../fonts/citroen_light-webfont.svg#citroenlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'citroenregular';
+    src: url('../fonts/citroen_regular-webfont.eot');
+    src: url('../fonts/citroen_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/citroen_regular-webfont.woff') format('woff'),
+         url('../fonts/citroen_regular-webfont.ttf') format('truetype'),
+         url('../fonts/citroen_regular-webfont.svg#citroenregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/*****************************************************   ALL  *****************************************************/
+
+.txtred{ color: #d62c35;}
+
+.bgRed{ background: #d62c35;}
+
+
+header{
+	border-top: 3px solid #d62c35; 
+	padding-top: 9px;
+	height: auto;
+	}
+	
+	
+.Header_1{
+	width: 940px;
+	height: 23px;
+	margin: 0 auto;
+	}
+	
+	.btn_logout{
+		font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+		
+		background-color : #b4b3b4;
+		color:#FFF;
+		text-decoration: none;
+		font-size: 11px;
+		border-radius: 15px;
+		padding:4px 20px 3px 20px;	
+		float: right;
+		}
+	
+	.icon_user{
+		background: url(../images/icone-user.png) no-repeat;
+		width:10px; height:10px;
+		float: left;
+		padding-right: 7px;
+		}
+	.hello_user{
+		font-size: 11px;
+		color:#acabac;
+		float: right;
+		padding: 5px 20px 0 0;
+		}
+
+
+	
+		
+/*********************** MENU LANGUE ************************/
+.content_select_language{
+		width: 140px;
+		height: 23px;
+		float: right;
+		margin-right: 48px;
+		}
+
+
+.select_language {
+	background: url(../images/BG_select.png) no-repeat;
+	padding:0;
+	margin:0;
+	width: 141px;
+	height: 23px;
+	list-style-type:none;
+	height:30px;
+}
+.select_language li { float:left; }
+.select_language li a {
+	display:block;
+	color:#B8B7B8;
+	text-decoration:none;
+	font:11px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+    padding: 4px 0 5px 14px;
+    width: 119px;
+}
+
+/* Submenu */
+.select_language ul {
+	position:absolute;
+	left:-9999px;
+	top:-9999px;
+	list-style-type:none;
+}
+.select_language li:hover { position:relative; }
+.select_language li:hover ul {
+	left:5px;
+	top:23px;
+	background:#fff;
+	padding:0px;
+}
+
+.select_language li:hover ul li a {
+	padding:7px 5px;
+	display:block;
+	width:120px;
+	text-indent:15px;
+	background-color:#fff;
+}
+.select_language li:hover ul li a:hover { background:#e5e5e5; }
+
+
+		
+
+.Header_2{
+	width: 940px;
+	height: 79px;
+	margin: 0 auto; 
+	}
+	.logo-citroen{ 
+		float: left;
+		}
+	.base_line{
+		float: left;
+		padding: 41px 0 0 33px;
+		color: #756e75;
+		font-size: 30px;
+		line-height: 15px;
+		font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		text-transform: uppercase;
+		}
+	.base_line span{ 
+		font-size: 18px;
+		}
+	.searchBar{ 
+		float: right;
+		}
+	.float_left{ 
+		float: left;}
+
+	#content_searchBar{
+			float: right;
+			padding-top: 34px;
+		}
+		#searchBar{
+			float:right;
+		}
+		.inputText{
+			margin: 0;
+			padding:0;
+			width: 200px;
+			height: 23px;
+			font-family: 'citroenlight', Arial, Helvetica, sans-serif;
+			font-size:29px;
+			color:#e3e3e3;
+			border: none;
+			background: none;
+    		padding-top: 18px;
+			float: right;
+			line-height: 0px;
+		}
+		.btn_searchBar {
+			float: right;
+			margin: 0;
+			height: 40px;
+			width: 40px;
+			outline: none;
+			cursor: pointer;
+			text-decoration: none;
+			color: #ffffff;
+			background: url(../images/icone_loupe.png) no-repeat center #d62c35 ;
+			border: none;
+		}
+		.btn_searchBar:hover {
+			text-decoration: none;
+			background:url(../images/icone_loupe.png) no-repeat center #b50020;
+		}
+		/* Fixes submit button height problem in Firefox */
+		.btn_searchBar::-moz-focus-inner {
+		  border: 0;
+		}
+		.clear{
+			clear:both;
+		}
+
+
+/********************************* NAVIGATION ******************************************/
+	.navigation{
+		width: 940px;
+		height: 32px;
+		margin: 21px auto 11px;
+		border-top: solid 1px #d2d0d2;
+		border-bottom: solid 1px #d62c35;
+		font-size: 14px;
+		font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		}
+		.navigation ul li{
+			display: inline;
+			}
+			.navigation ul li.first{
+				margin-left: 55px;
+				}
+			
+			ul.nav-main li { /*règles générales des items de liste */
+			list-style: none;
+			margin: 0;
+			}
+			
+			ul.nav-main { /*règles des items principaux*/
+			position: relative;
+			z-index: 597;
+			}
+			
+			ul.nav-main li:hover > ul { /*apparition des sous-listes au survol de l'item principal ul*/
+			visibility: visible;
+			}
+			
+			ul.nav-main li:hover, ul.nav-main li.active  { /*design des items de liste au survol*/
+			position: relative;
+			z-index: 599;
+			cursor: pointer;
+			background: url(../images/bg_navigation.jpg) no-repeat 10px bottom;
+			}
+			ul.nav-main li:hover a{
+				color:#d62c35;
+				}
+			
+			ul.nav-main li { /*positionnement, dimensions, couleurs et textes des items de liste*/
+			float:left;
+			display:block;
+			height: 32px;
+			color: #756e75;
+			font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
+			}
+			
+			ul.nav-main li a { /*positionnement, dimensions, couleurs et textes des items de liste intégrant une redirection url*/
+			display: block;
+			padding: 9px 10px 13px 9px;
+			height: 14px;
+			color: #bfbcbf;
+			font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
+			text-decoration:none;
+			line-height: 13px;
+			text-transform: uppercase;
+			}
+			
+			ul.nav-main li a:hover, ul.nav-main li.active a  { /* couleurs des items de liste au survol*/
+			color:#d62c35;
+			}
+			
+			ul.nav-main *.list { /*décalage entre chaque items principaux*/
+			/*padding-right: 22px;*/
+			}
+			
+			ul.nav-sub { /*règles de la liste ul de sous menus*/
+			visibility: hidden;
+			position: absolute;
+			top: 33px;
+			left: 10px;
+			z-index: 598;
+			background: #d62c35;
+			border-bottom: 1px solid #c41a20;
+		    -moz-box-shadow:    1px 2px 3px -2px #000;
+		    -webkit-box-shadow: 1px 2px 3px -2px #000;
+		    box-shadow:         1px 2px 3px -2px #000;
+			
+			}
+			
+			ul.nav-sub li { /* regles des items de liste sous menu */
+			list-style:none;
+			display:block;
+			padding: 0;
+			height: auto;
+			float: none;
+			width:160px;
+			border-bottom: 1px solid #da4149;
+			border-right:none;
+			background: none;
+			clear: both;
+			}
+			
+			ul.nav-sub li a { /* règles des items de liste de sous menus intégrant une redirection url */
+			list-style:none;
+			color: #FFF;
+			display: table-cell;
+			padding: 8px;
+			height: 15px;
+			float: none;
+			width:160px;
+			background: none;
+			font: 11px Arial, Helvetica, sans-serif;
+			text-transform: none;
+			border-bottom: 1px solid #c41a20;
+			}
+			
+			ul.nav-sub li a:hover  {
+				color: #FFF;
+				background: #cb1f2e;}
+			
+			ul.nav-main li:hover ul.nav-sub li a{color: #FFF;}
+			
+			
+			
+/***************** SECTIONS ********************************/			
+
+#container{ 
+	width:100%;
+	height:auto;
+	display:table;
+	}
+	
+section{
+	width: 100%;
+	height: auto;
+	}
+	
+.wrapper{
+	width: 940px;
+	margin: 0 auto;
+	}
+	
+
+/*****************************************************   HOME   *****************************************************/
+
+
+
+/************* SLIDER ******************/
+#slideshow{
+	height: 330px;
+	}
+	
+.banner { position: relative; overflow: auto; width: 940px; margin: 0 auto; }
+.banner ul { padding: 0}
+.banner li { list-style: none; }
+.banner ul li { float: left; color:#000; height: 330px; width: 940px; position: relative;}
+.banner ul li span { position: absolute; right: 15px; top: 15px;}
+
+/********* ZONE DROITE SLIDER ****************/
+.banner .banner_right{
+	background: #d62c35;
+	color: #FFF;
+	width: 384px;
+	height: 330px;
+	padding: 23px 43px;
+	position: absolute;
+	right:0;
+	top:0;
+	}
+
+.banner .banner_right h1{
+	font: 48px/31px 'citroenregular', Arial, Helvetica, sans-serif;
+	color: #FFF;
+	height: 36px;
+	line-height: 
+	text-transform: uppercase;
+	}
+
+.banner .banner_right h2{
+	font: 18px/21px 'citroenregular', Arial, Helvetica, sans-serif;
+	color: #FFF;
+	text-transform: uppercase;
+	padding-top: 8px;
+	}
+
+.banner .banner_right p{
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #FFF;
+	padding-top: 7px ;
+	}
+	
+.banner .banner_right .btn_learnmore{
+	color: #d62c35;
+	background: #fff;
+	text-decoration: none;
+	padding:7px 45px;
+	border-radius: 20px;
+	font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	float: left;
+	margin-top: 8px;
+	}
+	
+.banner .banner_right .btn_learnmore:hover{
+	color: #b50020;
+}
+	
+/************ PUCE SLIDER ***********/
+
+.banner .dots {
+    position: absolute;
+    right: 20px;
+    bottom: 13px;
+	height: 13px;
+}
+.banner .dots li {
+    display: inline-block;
+    width: 34px;
+    height: 8px;
+    margin: 0 4px;
+    text-indent: -999em;
+    background: #fff;
+	border: 2px solid #fff;
+    cursor: pointer;
+}
+.banner .dots li.active {
+	border: 2px solid #fff;
+	background: transparent;
+}
+
+
+
+
+
+
+
+/************* EDITO ******************/
+#edito{
+	min-height: 200px;
+	background:#fff;
+	}
+
+#edito .wrapper{
+	display: table;
+	padding-bottom: 20px;
+	}
+#edito h2{
+	background: #fafafa;
+	font: 24px 'citroenlight', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	padding:18px 0 0 42px;
+	width: 257px;
+	}
+
+#edito p{
+	font: 18px/23px 'citroenlight', Arial, Helvetica, sans-serif;
+	color: #2a2823;
+	padding: 11px 0 0 43px;
+	background:url(../images/guillemet_left.png) no-repeat left 8px;
+	}
+#edito .guillemet_close{
+	width: 16px;
+	height: 36px;
+	background:url(../images/guillemet_right.png) no-repeat bottom right;
+	display: inline-block;}
+
+#edito .btn_learnmore{
+	color: #d62c35;
+	background: #fafafa;
+	border: solid 1px #e5e7e9;
+	text-decoration: none;
+	padding: 7px 45px;
+	border-radius: 20px;
+	font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	float: right;
+	}
+	
+#edito .btn_learnmore:hover{
+	background: #f3f3f3;
+	}
+
+
+#MEA .wrapper .group1 {
+	margin-top: 10px;
+	display: inline-block;
+	}
+
+/************* MEA 4 COLONNE ******************/
+#MEA .wrapper .group1 .item{
+	width: 183px;
+	height: 163px;
+	background: url(../images/BG_triangle_white.png) no-repeat top center #e5e7e9;
+	padding: 34px 18px 18px;
+	float: left;
+	margin-left: 20px;
+	}
+	
+#MEA .wrapper .group1 .item.first{
+	margin-left: 0;
+	}
+	
+#MEA .wrapper .group1 .item h2{
+	font: 24px 'citroenlight', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #d62c35;
+	text-align: center;
+	}
+
+#MEA .wrapper .group1 .item p{
+	font: 12px/18px Arial, Helvetica, sans-serif;
+	color: #302b28;
+	padding: 4px 0 17px;
+	text-align: justify;
+	}
+
+#MEA .wrapper .group1 .item .btn_learnmore{
+	color: #d62c35;
+	background: #fafafa;
+	border: solid 1px #FFFFFF;
+	text-decoration: none;
+	padding:7px 45px;
+	border-radius: 20px;
+	font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	white-space: nowrap;
+	}
+#MEA .wrapper .group1 .item .btn_learnmore:hover{
+	background: #fff;
+}
+
+/************* MEA 3 COLONNES  ******************/
+#MEA .wrapper .group2 {
+	margin: 24px 0 31px 0;
+	display: inline-block;
+	}
+
+#MEA .wrapper .group2 .item{
+	width: 261px;
+	height: 145px;
+	background: #fff;
+	padding: 18px;
+	float: left;
+	margin-left: 20px;
+	border: solid 1px #edeeef;
+	}
+	
+#MEA .wrapper .group2 .item.first{
+	margin-left: 0;
+	}
+
+
+#MEA .wrapper .group2 .item h3{
+	margin-bottom: 6px;
+	}
+			
+#MEA .wrapper .group2 .item h3, #MEA .wrapper .group2 .item h3 a{
+	font: 18px 'citroenlight', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #756e75;
+	text-decoration: none;
+	}
+
+#MEA .wrapper .group2 .item a.picture{
+	float: left;
+	}
+
+#MEA .wrapper .group2 .item p{
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #756e75;
+	margin-left: 16px;
+	text-decoration: none;
+	float: left;
+	width: 125px;
+	}
+
+#MEA .wrapper .group2 .item p a{
+	font: 12px/15px Arial, Helvetica, sans-serif;
+	color: #756e75;
+	text-decoration: none;
+	float: left;
+	width: 125px;
+	}
+
+
+/*************   FOOTER   ****************/
+footer{
+	width: 100%;
+	display: inline-block;
+	}
+
+.footer_1{
+	width: 100%;
+	display: inline-block;
+	background: #f5f5f5;
+	padding: 30px 0;
+	}
+
+.footer_1 .wrapper ul{
+	float: left;
+	width: 140px;
+	margin-left: 20px;
+	}
+
+.footer_1 .wrapper ul.first{
+	margin-left: 0;
+	}
+	
+.footer_1 .wrapper ul li{
+	list-style: none;
+	}
+.footer_1 .wrapper ul li a{
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #bcb9bc;
+	text-decoration: none;
+	}
+.footer_1 .wrapper ul li a:hover{
+	color: #a09ca0;
+	}
+	
+.footer_1 .wrapper ul li.title a{
+	font: 14px 'citroenlight', Arial, Helvetica, sans-serif;
+	color: #bcb9bc;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+	} 
+
+.footer_1 .wrapper ul li.title{
+	border-bottom: solid 1px #dbdadb;
+	margin-bottom: 14px;
+	}
+
+
+
+
+.footer_2{
+	width: 100%;
+	display: inline-block;
+	background: #f0f0f0;
+	margin-top: -4px;
+	padding: 12px 0 30px 0;
+	}
+	
+	
+.footer_2 .wrapper ul{
+	text-align: center;
+	
+	}
+
+.footer_2 .wrapper ul li{
+	list-style: none;
+	display: inline-block;
+	}
+.footer_2 .wrapper ul li a{
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #bcb9bc;
+	text-decoration: none;
+	}
+
+.footer_2 .wrapper ul li a:hover{
+	color: #a09ca0;
+	}
+
+.footer_2 .wrapper a.logo_footer{
+	display: block;
+	float: right;
+	margin-top: -16px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
