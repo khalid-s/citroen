@@ -151,3 +151,53 @@
 #documentaire p {
   margin: 4px 0;
 }
+
+/* line 150, screen.scss */
+#recherche .block-recherche {
+  background: #d62c35;
+  height: 120px;
+  margin-bottom: 20px;
+}
+/* line 154, screen.scss */
+#recherche .block-recherche h5 {
+  font-size: 14px;
+  text-align: center;
+  font-weight: normal;
+  color: white;
+  padding: 20px 0 10px 0;
+}
+/* line 161, screen.scss */
+#recherche .block-recherche input[type=text] {
+  border: 1px solid #c72831;
+  display: inline-block;
+  width: 479px;
+  height: 41px;
+  margin-left: 200px;
+  padding: 0 5px;
+  font-size: 16px;
+}
+/* line 170, screen.scss */
+#recherche .block-recherche input[type=submit] {
+  margin-left: -5px;
+  font-size: 16px;
+  height: 41px;
+  width: 61px;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  background: url(../images/icone-loupe-rechercher.png) no-repeat center white;
+  border: none;
+}
+/* line 183, screen.scss */
+#recherche .content {
+  background: white;
+}
+/* line 186, screen.scss */
+#recherche .content .icones-right ul {
+  float: right;
+}
+/* line 188, screen.scss */
+#recherche .content .icones-right ul li {
+  list-style: none;
+  display: inline-block;
+}
