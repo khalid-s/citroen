@@ -4,7 +4,7 @@
 #login{
 	margin-top: 60px;
 	background: #d62c35;
-	padding: 20px 0;
+	padding: 20px 0 15px 0;
 	font-size: 18px;
 	margin-bottom: 120px;
 	.seperator{
@@ -16,11 +16,11 @@
 	h1{
 		text-transform: uppercase;
 		color:white;
-		font:'citroenregular', Arial, Helvetica, sans-serif;
+		font-size: 44px;
+		font-family: 'citroenregular', Arial, Helvetica, sans-serif;
 		font-weight: normal;
-		font-size: 42px;
-		line-height: 38px;
-		margin-bottom: 15px;
+		line-height: 36px;
+		margin-bottom: 10px;
 	}
 	label{
 		margin: 10px 0 3px 0;
@@ -28,24 +28,27 @@
 		text-transform: uppercase;
 		color:white;
 		display: inline-block;
+		font-size: 1em;
+		font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+		font-weight: normal;
 	}
-	input{display: block}
-	.submit{
-		display: block;
-		text-align: center;
-		margin: 0 auto;
-		margin-top: 20px;
-		color: #d62c35;
-		background: #fff;
-		text-decoration: none;
-		padding:7px 45px;
-		@include border-radius(20px);
-		font: 1em 'citroenregular', Arial, Helvetica, sans-serif;
-		text-transform: uppercase;
-			&:hover{
-			color: #b50020;
-			}
-		}
+	// input{display: block}
+	// .submit{
+	// 	display: block;
+	// 	text-align: center;
+	// 	margin: 0 auto;
+	// 	margin-top: 20px;
+	// 	color: #d62c35;
+	// 	background: #fff;
+	// 	text-decoration: none;
+	// 	padding:7px 45px;
+	// 	@include border-radius(20px);
+	// 	font: 1em 'citroenregular', Arial, Helvetica, sans-serif;
+	// 	text-transform: uppercase;
+	// 		&:hover{
+	// 		color: #b50020;
+	// 		}
+	// 	}
 	input[type=submit]{
 		border: none;
 		display: block;
@@ -58,7 +61,10 @@
 		padding:5px 45px;
 		text-transform: uppercase;
 		@include border-radius(20px);
-		font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		// line-height: 10px;
 			&:hover{
 			color: #b50020;
 			}
@@ -76,7 +82,7 @@
 			list-style: none;
 			display: inline-block;
 			padding: 5px 0;
-			font-size: 12px;
+			font-size: 16px;
 			&:first-child{
 				padding-right: 8px;
 			}
@@ -89,6 +95,9 @@
 				text-decoration: none;
 				color:white;
 				text-decoration: underline;
+				font-size: 1em;
+				font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+				font-weight: normal;
 			}
 		}
 	}

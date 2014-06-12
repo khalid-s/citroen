@@ -7,7 +7,7 @@
 #login {
   margin-top: 60px;
   background: #d62c35;
-  padding: 20px 0;
+  padding: 20px 0 15px 0;
   font-size: 18px;
   margin-bottom: 120px;
 }
@@ -22,11 +22,11 @@
 #login h1 {
   text-transform: uppercase;
   color: white;
-  font: 'citroenregular', Arial, Helvetica, sans-serif;
+  font-size: 44px;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
   font-weight: normal;
-  font-size: 42px;
-  line-height: 38px;
-  margin-bottom: 15px;
+  line-height: 36px;
+  margin-bottom: 10px;
 }
 /* line 25, screen.scss */
 #login label {
@@ -35,32 +35,11 @@
   text-transform: uppercase;
   color: white;
   display: inline-block;
+  font-size: 1em;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+  font-weight: normal;
 }
-/* line 32, screen.scss */
-#login input {
-  display: block;
-}
-/* line 33, screen.scss */
-#login .submit {
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 20px;
-  color: #d62c35;
-  background: #fff;
-  text-decoration: none;
-  padding: 7px 45px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  font: 1em 'citroenregular', Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-}
-/* line 45, screen.scss */
-#login .submit:hover {
-  color: #b50020;
-}
-/* line 49, screen.scss */
+/* line 52, screen.scss */
 #login input[type=submit] {
   border: none;
   display: block;
@@ -75,13 +54,15 @@
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
-  font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+  font-weight: normal;
 }
-/* line 62, screen.scss */
+/* line 68, screen.scss */
 #login input[type=submit]:hover {
   color: #b50020;
 }
-/* line 66, screen.scss */
+/* line 72, screen.scss */
 #login input[type=text], #login input[type=password] {
   width: 325px;
   border: none;
@@ -89,34 +70,37 @@
   line-height: 26px;
   padding: 2px 5px;
 }
-/* line 73, screen.scss */
+/* line 79, screen.scss */
 #login ul {
   margin-top: 15px;
 }
-/* line 75, screen.scss */
+/* line 81, screen.scss */
 #login ul li {
   list-style: none;
   display: inline-block;
   padding: 5px 0;
-  font-size: 12px;
+  font-size: 16px;
 }
-/* line 80, screen.scss */
+/* line 86, screen.scss */
 #login ul li:first-child {
   padding-right: 8px;
 }
-/* line 83, screen.scss */
+/* line 89, screen.scss */
 #login ul li:last-child {
   position: relative;
   left: -3px;
   padding-left: 8px;
 }
-/* line 88, screen.scss */
+/* line 94, screen.scss */
 #login ul li a {
   text-decoration: none;
   color: white;
   text-decoration: underline;
+  font-size: 1em;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+  font-weight: normal;
 }
-/* line 95, screen.scss */
+/* line 104, screen.scss */
 #login .center- {
   width: 325px;
   margin: 0 auto;
