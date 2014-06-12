@@ -8,6 +8,9 @@
         <title>Recherche</title>
         <link rel="stylesheet" href="css/style.css"  />
         <link rel="stylesheet" href="css/screen.css"  />
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/ie8.css" type="text/css" media="screen,projection" />
+        <![endif]-->
         <!-- JS SLIDER -->
         <script src="js/jquery-latest.min.js"></script>
 		<script src="js/unslider.js"></script>
@@ -93,6 +96,15 @@
         <div id="container">
             <div id="recherche">
                 <div class="wrapper">
+                
+                    <section id="file_dariane">
+                        <div class="wrapper">
+                            <ul class="fil_dariane">
+                                <li><a href="#">Accueil > </a></li>
+                                <li>Recherche</li>
+                            </ul>
+                        </div>
+                    </section>
 
                     <div class="block-recherche">
                         <h5>Vous n'êtes pas satisfait du résultat ? Recherchez avec un nouveau mot clé</h5>
@@ -102,13 +114,25 @@
 
                     <div class="content">
 
+                        <div id="resultat">
+                            <h3>Résultats : </h3><span class="resultats"> 1-10 sur 43</span>
+                        </div>
+
+                        <!-- Les icones qui se trouvent dans le contenu sur la droite -->
                         <div class="icones-right">
                             <ul>
-                                <li>a+</li>
-                                <li>a-</li>
-                                <li><img src="images/print.png" alt="imprimante" class="imprimante"></li>
+                                <li><a href="#">a+</a></li>
+                                <li><a href="#">a-</a></li>
+                                <li><a href="#"><!-- <img src="images/icon-recherche-print.png" alt=""> -->.</a></li>
                             </ul>
                         </div>
+
+                        <div class="clear"></div>
+
+                        <hr>
+
+                        wsdf
+
 
                     </div><!-- END Content -->
 

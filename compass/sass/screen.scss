@@ -2,6 +2,22 @@
 .clear-both{clear:both}
 .height10{height: 10px;}
 
+// --------------- DEBUT FIL D'ARIANE -------------------------------
+#file_dariane .wrapper ul.fil_dariane {
+list-style: none;
+}
+
+#file_dariane .wrapper ul.fil_dariane li{
+display: inline-block;
+font: 11px Arial, Helvetica, sans-serif;
+color: #756e75;
+}
+#file_dariane .wrapper ul.fil_dariane li a{
+font: 11px Arial, Helvetica, sans-serif;
+color: #bfbcbf;
+text-decoration: none;
+}
+// --------------- FIN FIL D'ARIANE -------------------------------
 #login{
 	margin-top: 60px;
 	background: #d62c35;
@@ -147,15 +163,25 @@
 	}
 }
 #recherche{
+	#file_dariane{
+		margin-top: -3px;
+		margin-bottom: 7px;
+	}
+	hr{
+		margin: 10px 20px;
+		color:#e9e9e9;
+		border-top: 1px solid #e9e9e9;
+		border-left: 1px solid #e9e9e9;
+	}
 	.block-recherche{
 		background: #d62c35;
 		height: 120px;
-		margin-bottom: 20px;
+		margin-bottom: 22px;
 		h5{
 			font-size: 14px;
 			text-align: center;
 			font-weight: normal;
-			color:white;
+			color:#f3dbdb;
 			padding: 20px 0 10px 0;
 		}
 		input[type=text]{
@@ -186,13 +212,41 @@
 			ul{
 				float: right;
 				li{
+					margin: 1px;
 					list-style: none;
 					display: inline-block;
-					.imprimante{
-						
+					width: 30px;
+					height: 28px;
+					line-height: 26px;
+					vertical-align: -3px;
+					border: 1px solid #e5e7e9;
+					text-align: center;
+					font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+					a{
+						color: #c6c4c6;
+						text-decoration: none;
+						display: inline-block;
+						height: 28px;
+						width: 30px;
+						img{display: inline;}
 					}
 				}
 			}
+		}
+	}
+	#resultat{
+		float: left;
+		text-transform: uppercase;
+		padding: 10px 10px 0 10px;
+		font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+		h3{
+			display: inline-block;
+			font-size: 18px;
+			color: #191919;
+		}
+		.resultats{
+			font-size: 14px;
+			color:#c2c2c2;
 		}
 	}
 }
