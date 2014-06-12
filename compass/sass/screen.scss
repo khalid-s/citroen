@@ -1,5 +1,6 @@
 @import 'compass';
 .clear-both{clear:both}
+.height10{height: 10px;}
 
 #login{
 	margin-top: 60px;
@@ -134,6 +135,14 @@
 	}
 }
 
-.height10{
-	height: 10px;
+#documentaire{
+	@extend #rubrique;
+	#MEA{
+		.item{
+			height: 195px;
+		}
+	}
+	p{
+		margin: 4px 0;
+	}
 }
