@@ -106,3 +106,30 @@
 		margin: 0 auto;
 	}
 }
+
+#rubrique{
+	#MEA{
+		margin-bottom: 20px;
+		.icon-sous-rubrique{
+			height: 62px;
+			width:62px;
+			margin: 20px 0 20px 60px;
+			img{
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+		.item{
+			height: 300px - 40px;
+			h2{
+				margin-top: -5px
+			}
+			a{
+				padding: 5px 45px;
+			}
+		}
+		.btn_learnmore{
+			background: #f0f0f0;
+		}
+	}
+}
