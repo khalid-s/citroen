@@ -212,9 +212,11 @@ text-decoration: none;
 	}
 
 	.content{
+		width:910px;
 		background: white;
 		position: relative;
 		padding: 15px;
+		margin-bottom: 30px;
 		.icones-right{
 			ul{
 				position: absolute;
@@ -337,6 +339,7 @@ text-decoration: none;
 	#pagination{
 		width: 420px;
 		margin: 0 auto;
+		padding: 7px 0 15px 0;
 		a{
 			display: inline-block;
 			margin: 0 10px;
