@@ -2,6 +2,7 @@
 .clear-both{clear:both}
 .height10{height: 10px;}
 
+
 // --------------- DEBUT FIL D'ARIANE -------------------------------
 #file_dariane .wrapper ul.fil_dariane {
 list-style: none;
@@ -49,23 +50,6 @@ text-decoration: none;
 		font-family: 'citroenregular', Arial, Helvetica, sans-serif;
 		font-weight: normal;
 	}
-	// input{display: block}
-	// .submit{
-	// 	display: block;
-	// 	text-align: center;
-	// 	margin: 0 auto;
-	// 	margin-top: 20px;
-	// 	color: #d62c35;
-	// 	background: #fff;
-	// 	text-decoration: none;
-	// 	padding:7px 45px;
-	// 	@include border-radius(20px);
-	// 	font: 1em 'citroenregular', Arial, Helvetica, sans-serif;
-	// 	text-transform: uppercase;
-	// 		&:hover{
-	// 		color: #b50020;
-	// 		}
-	// 	}
 	input[type=submit]{
 		border: none;
 		display: block;
@@ -125,6 +109,72 @@ text-decoration: none;
 }
 
 #rubrique{
+	.slider{
+		height: 367px;
+		background: blue;
+		width:940px;
+		background: url(../images_administrable/banner-rubrique.jpg) no-repeat center;
+		position: relative;
+		margin: 5px 0 10px 0;
+		.texte{
+			position: absolute;
+			bottom: 0;
+			margin: 10px 0 20px 15px;
+			color: #fafafa;
+			font-size: 12px;
+			font-family: 'citroenlight', Arial, Helvetica, sans-serif;
+			font-weight: normal;
+			h1{
+				font-size: 48px;
+				line-height: 45px;
+				text-transform: uppercase;
+				font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+			}
+			h3{
+				font-size: 18px;
+				font-family: 'citroenlight', Arial, Helvetica, sans-serif;
+				line-height: 22px;
+				margin-bottom: 5px;
+				text-transform: uppercase;
+			}
+			p{
+				font-size: 12px;
+				line-height: 15px;
+				width: 541px;
+				font-weight: bold;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+		}
+		.sous-rubrique{
+			position:relative;
+			top: 190px;
+			left:640px;
+			height: 180px;
+			width:280px;
+			padding: 10px;
+			color:#fafafa;
+			hr{
+				margin: 6px 0;
+				// color:#CE3D42;
+				border-bottom: 1px solid #CE3D42;
+				border-top: 1px solid #a7161b;
+				border-left: 1px solid #a7161b;
+				border-right: 1px solid #a7161b;
+			}
+			ul{
+				width:280px;
+				li{
+				width:300px -20px;
+					list-style: none;
+					font-size: 14px;
+					font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+				}
+				li:before {
+				    content: "> ";
+				}
+			}
+		}
+	}
 	#MEA{
 		margin-bottom: 20px;
 		.icon-sous-rubrique{
@@ -153,6 +203,9 @@ text-decoration: none;
 
 #documentaire{
 	@extend #rubrique;
+	.slider{
+		background: url(../images_administrable/banner-documentaire.jpg) no-repeat center;
+	}
 	#MEA{
 		.item{
 			height: 195px;
