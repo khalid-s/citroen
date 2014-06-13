@@ -8,10 +8,6 @@
         <title>Recherche</title>
         <link rel="stylesheet" href="css/style.css"  />
         <link rel="stylesheet" href="css/screen.css"  />
-        <!--[if lte IE 8]>
-            <link rel="stylesheet" href="css/ie8.css" type="text/css" media="screen,projection" />
-        <![endif]-->
-        <!-- JS SLIDER -->
         <script src="js/jquery-latest.min.js"></script>
 		<script src="js/unslider.js"></script>
 
@@ -106,35 +102,179 @@
                         </div>
                     </section>
 
-                    <div class="block-recherche">
+                    <section class="block-recherche">
                         <h5>Vous n'êtes pas satisfait du résultat ? Recherchez avec un nouveau mot clé</h5>
-                        <input type="text">
-                        <input type="submit" class="btn_loupe_page_recherche" value="">
-                    </div>
+                        <div style="width:551px;height:43px;margin: 0 auto;">
+                            <form action="#">
+                                <input type="text" >
+                                <input type="submit" class="btn_loupe_page_recherche" value=""> 
+                            </form> 
+                        </div>
 
-                    <div class="content">
+                    </section>
+
+                    <section class="content">
 
                         <div id="resultat">
-                            <h3>Résultats : </h3><span class="resultats"> 1-10 sur 43</span>
+                            <h3>Résultats : </h3>
+                            <span class="resultats"> 1-10 sur 43</span>
                         </div>
 
                         <!-- Les icones qui se trouvent dans le contenu sur la droite -->
                         <div class="icones-right">
                             <ul>
-                                <li><a href="#">a+</a></li>
+                                <li><a href="#"><img src="images/icon-recherche-print.png" alt=""></a></li>
                                 <li><a href="#">a-</a></li>
-                                <li><a href="#"><!-- <img src="images/icon-recherche-print.png" alt=""> -->.</a></li>
+                                <li><a href="#">a+</a></li>
                             </ul>
                         </div>
 
                         <div class="clear"></div>
 
                         <hr>
+                        
+                        <div id="champs">
+                            <label for="trie">trier par :</label>
+                            <div class="select">
+                                <select name="trie" id="trie">
+                                    <option value="selectionner">Sélectionner</option>
+                                    <option value="option_1">option 1</option>
+                                    <option value="option_2">Option 2</option>
+                                </select>
+                            </div>
 
-                        wsdf
+                            <label for="ordre" class="margin020">order</label>
+                            <div class="select">
+                                <select name="order" id="order">
+                                    <option value="order_1">Croissant</option>
+                                    <option value="order_2">order 2</option>
+                                    <option value="order_3">order 3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <article>
+                            <img src="images_administrable/recherche-article-1.png" alt="">
+                            <h1>lorem ipsum dolor</h1><br>
+                            <span class="date">le 15/04/2014</span>
+
+                            <div class="clear"></div>
+
+                            <p>
+                                Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim. Suspendisse sit amet leo tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar, a laoreet ante tincidunt. Vivamus et sapien quis nulla dictum porttitor quis at quam. <br>
+                                In hac habitasse platea dictumst.
+                            </p>
+
+                            <a href="#">http://www.citroen.fr/duissedloremnonjustohendreritconsequateuegetmetus</a>
+                        </article>
+                        
+                        <hr>
+
+                        <article>
+                            <img src="images_administrable/recherche-article-2.png" alt="">
+                            <h1>lorem ipsum dolor</h1><br>
+                            <span class="date">le 15/04/2014</span>
+
+                            <div class="clear"></div>
+
+                            <p>
+                                Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim. Suspendisse sit amet leo tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar, a laoreet ante tincidunt. Vivamus et sapien quis nulla dictum porttitor quis at quam. <br>
+                                In hac habitasse platea dictumst.
+                            </p>
+
+                            <a href="#">http://www.citroen.fr/duissedloremnonjustohendreritconsequateuegetmetus</a>
+                        </article>
+                        
+                        <hr>
+
+                        <article>
+                            <img src="images_administrable/recherche-article-3.png" alt="">
+                            <h1>lorem ipsum dolor</h1><br>
+                            <span class="date">le 15/04/2014</span>
+
+                            <div class="clear"></div>
+
+                            <p>
+                                Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim. Suspendisse sit amet leo tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar, a laoreet ante tincidunt. Vivamus et sapien quis nulla dictum porttitor quis at quam. <br>
+                                In hac habitasse platea dictumst.
+                            </p>
+
+                            <a href="#">http://www.citroen.fr/duissedloremnonjustohendreritconsequateuegetmetus</a>
+                        </article>
+                        
+                        <hr>
+
+                        <article>
+                            <img src="images_administrable/recherche-article-1.png" alt="">
+                            <h1>lorem ipsum dolor</h1><br>
+                            <span class="date">le 15/04/2014</span>
+
+                            <div class="clear"></div>
+
+                            <p>
+                                Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim. Suspendisse sit amet leo tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar, a laoreet ante tincidunt. Vivamus et sapien quis nulla dictum porttitor quis at quam. <br>
+                                In hac habitasse platea dictumst.
+                            </p>
+
+                            <a href="#">http://www.citroen.fr/duissedloremnonjustohendreritconsequateuegetmetus</a>
+                        </article>
+                        
+                        <hr>
+
+                        <article>
+                            <img src="images_administrable/recherche-article-2.png" alt="">
+                            <h1>lorem ipsum dolor</h1><br>
+                            <span class="date">le 15/04/2014</span>
+
+                            <div class="clear"></div>
+
+                            <p>
+                                Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim. Suspendisse sit amet leo tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar, a laoreet ante tincidunt. Vivamus et sapien quis nulla dictum porttitor quis at quam. <br>
+                                In hac habitasse platea dictumst.
+                            </p>
+
+                            <a href="#">http://www.citroen.fr/duissedloremnonjustohendreritconsequateuegetmetus</a>
+                        </article>
+                        
+                        <hr>
+
+                        <article>
+                            <img src="images_administrable/recherche-article-3.png" alt="">
+                            <h1>lorem ipsum dolor</h1><br>
+                            <span class="date">le 15/04/2014</span>
+
+                            <div class="clear"></div>
+
+                            <p>
+                                Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim. Suspendisse sit amet leo tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar, a laoreet ante tincidunt. Vivamus et sapien quis nulla dictum porttitor quis at quam. <br>
+                                In hac habitasse platea dictumst.
+                            </p>
+
+                            <a href="#">http://www.citroen.fr/duissedloremnonjustohendreritconsequateuegetmetus</a>
+                        </article>
+                        
+                        <hr>
+
+                        <div id="pagination">
+                            <span class="btn">
+                                <a href="#">précédent</a>
+                            </span>
+
+                            <span class="page"><a href="#">1</a></span>
+                            <span class="page"><a href="#">2</a></span>
+                            <span class="page"><a href="#">3</a></span>
+                            <span class="page active"><a href="#">4</a></span>
+                            <span class="page"><a href="#">5</a></span>
+                            
+                            <span class="btn">
+                                <a href="#">suivant</a>
+                            </span>
+                        </div>
 
 
-                    </div><!-- END Content -->
+                    </section><!-- END Content -->
 
                 </div><!-- END Wrapper -->
             </div><!-- END Recherche -->

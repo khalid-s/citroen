@@ -178,7 +178,7 @@
 }
 /* line 170, screen.scss */
 #recherche hr {
-  margin: 10px 20px;
+  margin: 10px 0;
   color: #e9e9e9;
   border-top: 1px solid #e9e9e9;
   border-left: 1px solid #e9e9e9;
@@ -187,9 +187,10 @@
 #recherche .block-recherche {
   background: #d62c35;
   height: 120px;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
+  position: relative;
 }
-/* line 180, screen.scss */
+/* line 181, screen.scss */
 #recherche .block-recherche h5 {
   font-size: 14px;
   text-align: center;
@@ -197,76 +198,196 @@
   color: #f3dbdb;
   padding: 20px 0 10px 0;
 }
-/* line 187, screen.scss */
+/* line 188, screen.scss */
 #recherche .block-recherche input[type=text] {
   border: 1px solid #c72831;
-  display: inline-block;
+  border-right: 0;
+  display: block;
+  float: left;
   width: 479px;
   height: 41px;
-  margin-left: 200px;
   padding: 0 5px;
   font-size: 16px;
 }
-/* line 196, screen.scss */
+/* line 199, screen.scss */
 #recherche .block-recherche input[type=submit] {
-  margin-left: -5px;
+  display: block;
+  float: left;
+  border: 1px solid #c72831;
+  border-left: 0;
   font-size: 16px;
-  height: 41px;
+  height: 43px;
   width: 61px;
   outline: none;
   cursor: pointer;
   text-decoration: none;
   background: url(../images/icone-loupe-rechercher.png) no-repeat center white;
-  border: none;
-}
-/* line 209, screen.scss */
-#recherche .content {
-  background: white;
-}
-/* line 212, screen.scss */
-#recherche .content .icones-right ul {
-  float: right;
 }
 /* line 214, screen.scss */
+#recherche .content {
+  background: white;
+  position: relative;
+  padding: 15px;
+}
+/* line 219, screen.scss */
+#recherche .content .icones-right ul {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+}
+/* line 223, screen.scss */
 #recherche .content .icones-right ul li {
+  float: right;
   margin: 1px;
   list-style: none;
   display: inline-block;
-  width: 30px;
-  height: 28px;
+  width: 32px;
+  height: 30px;
   line-height: 26px;
   vertical-align: -3px;
   border: 1px solid #e5e7e9;
   text-align: center;
   font-family: 'citroenregular', Arial, Helvetica, sans-serif;
 }
-/* line 225, screen.scss */
+/* line 235, screen.scss */
 #recherche .content .icones-right ul li a {
   color: #c6c4c6;
   text-decoration: none;
   display: inline-block;
-  height: 28px;
-  width: 30px;
+  height: 30px;
+  width: 32px;
 }
-/* line 231, screen.scss */
+/* line 241, screen.scss */
 #recherche .content .icones-right ul li a img {
   display: inline;
 }
-/* line 237, screen.scss */
+/* line 249, screen.scss */
 #recherche #resultat {
   float: left;
   text-transform: uppercase;
-  padding: 10px 10px 0 10px;
+  padding: 0px;
   font-family: 'citroenregular', Arial, Helvetica, sans-serif;
 }
-/* line 242, screen.scss */
+/* line 254, screen.scss */
 #recherche #resultat h3 {
   display: inline-block;
   font-size: 18px;
   color: #191919;
 }
-/* line 247, screen.scss */
+/* line 259, screen.scss */
 #recherche #resultat .resultats {
   font-size: 14px;
   color: #c2c2c2;
+}
+/* line 265, screen.scss */
+#recherche #champs .select {
+  display: inline-block;
+  height: 28px;
+  border: 1px solid #e5e7e9;
+}
+/* line 270, screen.scss */
+#recherche #champs select {
+  display: inline-block;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../images/fleche-bas-select.png) no-repeat 95% center;
+  width: 140px;
+  text-indent: 0.01px;
+  text-overflow: "";
+  color: #b8b7b8;
+  padding: 5px;
+}
+/* line 282, screen.scss */
+#recherche #champs label {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+  color: #b8b7b8;
+  line-height: 30px;
+  vertical-align: middle;
+  padding: 0 20px;
+}
+/* line 292, screen.scss */
+#recherche #champs option {
+  margin-bottom: 7px;
+  line-height: 18px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+/* line 300, screen.scss */
+#recherche article {
+  padding: 5px 0 0 0;
+}
+/* line 302, screen.scss */
+#recherche article img {
+  float: left;
+  margin-right: 10px;
+}
+/* line 306, screen.scss */
+#recherche article h1 {
+  display: inline-block;
+  color: #191919;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  line-height: 18px;
+}
+/* line 315, screen.scss */
+#recherche article .date {
+  color: #b8b7b8;
+  font-size: 12px;
+  line-height: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* line 321, screen.scss */
+#recherche article p {
+  margin-top: 18px;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #756e75;
+}
+/* line 328, screen.scss */
+#recherche article a {
+  font-family: 'citroenitalic', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #d62c35;
+  display: inline-block;
+  margin: 15px 0;
+}
+/* line 337, screen.scss */
+#recherche #pagination {
+  width: 420px;
+  margin: 0 auto;
+}
+/* line 340, screen.scss */
+#recherche #pagination a {
+  display: inline-block;
+  margin: 0 10px;
+  text-transform: capitalize;
+  color: #756e75;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+}
+/* line 349, screen.scss */
+#recherche #pagination .active a {
+  color: #d62c35;
+}
+/* line 352, screen.scss */
+#recherche #pagination .btn {
+  margin: 5px 0;
+  display: inline-block;
+  border: 2px solid #756e75;
+  padding: 7px 26px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 358, screen.scss */
+#recherche #pagination .btn a {
+  font-size: 16px;
 }
