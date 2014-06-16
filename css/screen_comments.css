@@ -3,6 +3,11 @@
   clear: both;
 }
 
+a {
+  color: #fafafa;
+  text-decoration: none;
+}
+
 .height10 {
   height: 10px;
 }

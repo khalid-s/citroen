@@ -129,6 +129,9 @@ header{
 		text-decoration: none;
 		font-size: 11px;
 		border-radius: 15px;
+		-moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+		-khtml-border-radius: 15px;
 		padding:4px 20px 3px 20px;	
 		float: right;
 		}
@@ -469,6 +472,9 @@ section{
 	text-decoration: none;
 	padding:7px 45px;
 	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
 	font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	float: left;
@@ -545,6 +551,9 @@ section{
 	text-decoration: none;
 	padding: 7px 45px;
 	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
 	font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	float: right;
@@ -595,6 +604,9 @@ section{
 	text-decoration: none;
 	padding:7px 45px;
 	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
 	font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	white-space: nowrap;
@@ -747,15 +759,350 @@ footer{
 
 
 
+/*****************************************************   FAQ   *****************************************************/
+
+
+#file_dariane .wrapper ul.fil_dariane {
+	list-style: none;
+	}
+
+#file_dariane .wrapper ul.fil_dariane li{
+	display: inline-block;
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #756e75;
+	}
+	
+#file_dariane .wrapper ul.fil_dariane li a{
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #bfbcbf;
+	text-decoration: none;
+	}
+
+
+/******* BANNER 1 COL ***********/
+#banner_1col{
+	margin-top: 10px;
+	}
+	
+#banner_1col .wrapper .banner_img {
+	width: 940px;
+	height: 308px;
+	position: relative;
+	}
+
+#banner_1col .wrapper .banner_img h1{
+	position: absolute;
+	text-align: center;
+	font: 48px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	top: 52%;
+	left: 46%;
+	}
+
+#banner_1col .wrapper .banner_img p{
+	color: #FFFFFF;
+    font: 12px Arial,Helvetica,sans-serif;
+    padding: 0 20px;
+    position: absolute;
+    text-align: center;
+    top: 74%;
+	}
+
+/******* NAVIGATION THEME ***********/
+#nav_theme .wrapper{
+	padding-right: 20px;
+    width: 960px;
+	display: table;
+	}
+#nav_theme .wrapper a{
+	display: block;
+	float: left;
+	font: 18px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #cbc8cb;
+	border: solid 2px #cbc8cb;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	padding: 10px 34px;
+	margin: 10px 0 0 20px; 
+	}
+#nav_theme .wrapper a:hover{
+	color: #b3afb2;
+	border: solid 2px #b3afb2;
+	}
+	
+#nav_theme .wrapper a.active{
+	color: #d62c35;
+	border: solid 2px #d62c35;
+	}
+	
+#nav_theme .wrapper  .btn_theme{
+		list-style: none;}
+		
+#nav_theme .wrapper a.first{
+	margin-left: 0;
+	}
+
+/******* FAQ ACCORDION ***********/
+#faq .wrapper {
+	background: #FFF;
+	margin: 20px auto 10px;
+	padding: 20px 15px 60px 15px;
+	width: 910px;
+	position: relative;
+	}
+	
+#faq .wrapper h2{
+	font: 48px 'citroenlight', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #191919;
+	padding: 30px 0 17px;
+	}
+
+#faq .wrapper h2.first{
+	padding-top: 0;
+	}
+	
+.accordion h3 {
+	padding: 10px;
+	font: 18px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	}
+.accordion div p {}
 
 
 
 
+ul.btn_txt{
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 1px;
+	list-style: none;
+	display: inline-block;
+	width: 94px;
+	height: 28px;
+	}
+
+ul.btn_txt li a.btn_a_more{
+	font-family: 'citroenregular',Arial,Helvetica,sans-serif;
+    line-height: 26px;
+    text-align: center;
+	color: #C6C4C6;
+	text-decoration: none;
+	width: 26px;
+	height: 26px;
+	border: solid 1px #e5e7e9;
+	display: block;
+	float: right;
+	margin-right: 2px;
+	}
+	
+ul.btn_txt li a.btn_a_less{
+	font-family: 'citroenregular',Arial,Helvetica,sans-serif;
+    line-height: 26px;
+    text-align: center;
+	text-decoration: none;
+	color: #C6C4C6;
+	width: 26px;
+	height: 26px;
+	border: solid 1px #e5e7e9;
+	display: block;
+	float: right;
+	margin-right: 2px;
+	}
+	
+ul.btn_txt li a.btn_print{
+	background:url(../images/icon_print.png) no-repeat center #fafafa;
+	width: 26px;
+	height: 26px;
+	display: block;
+	float: right;
+	}
 
 
 
+/***************************************** PAGE ARTICLE ************************************************************/
+
+#Article_3_col .wrapper{
+	padding-top:10px;
+	}
+
+/** NAV LEFT **/
+#Article_3_col .wrapper nav.nav_rubrique{
+	width: 220px;
+	display: block;
+	float: left;
+	padding-top: 20px;
+	}
+
+#Article_3_col .wrapper  nav.nav_rubrique h2{
+	background: #756e75;
+	font: 18px 'citroenlight', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #fafafa;
+	display:block;
+	padding: 13px 0 3px 20px;
+	}
+
+#Article_3_col .wrapper  nav.nav_rubrique ul{
+	list-style: none;
+	background: #e5e7e9;
+	}
+
+#Article_3_col .wrapper  nav.nav_rubrique ul li{
+	border-bottom: solid 1px #fcfdfd;
+	}
+#Article_3_col .wrapper  nav.nav_rubrique ul li a{
+	text-decoration: none;
+	font: 14px 'citroenlight', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #756e75;
+	display: block;
+	padding: 10px 0 10px 20px;
+	border-bottom: solid 1px #cecfd1;
+	}
+
+
+/** SUB NAV**/
+#Article_3_col .wrapper  nav.nav_rubrique ul li.niveau_2{
+	background: #FFF;
+	}
+#Article_3_col .wrapper  nav.nav_rubrique ul li.niveau_2 a{
+	border: none;
+	}
+#Article_3_col .wrapper  nav.nav_rubrique .active{
+	color: #d62c35;
+	cursor: default;
+	padding-bottom: 5px;
+	}
+	#Article_3_col .wrapper  nav.nav_rubrique ul.subnav{
+		background: #FFF;
+		border-bottom: solid 1px #cecfd1;
+		padding-bottom: 20px;
+		}
+	#Article_3_col .wrapper  nav.nav_rubrique ul.subnav li{
+		border: none;
+		}
+	#Article_3_col .wrapper  nav.nav_rubrique ul.subnav li a{
+		text-decoration: none;
+		text-transform: none;
+		border: none;
+		padding: 3px 0 3px 40px;
+		}
 
 
 
+/** MODE 3 COLONNE - COLONNE CENTER **/
+
+#Article_3_col .col_center{
+	position: relative;
+	width: 560px;
+	padding: 20px;
+	box-sizing: border-box;
+	background: #FFF;
+	float: left;
+	margin-bottom: 40px;
+	}
 
 
+
+section.col_center article span{
+	color: #c1bfc1;
+	font-size: 12px;
+	}
+	
+section.col_center article h1{
+	font: 48px 'citroenlight', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #191919;
+	}
+	
+section.col_center article h2{
+	font: 18px 'citroenbold', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #191919;
+	padding-bottom: 7px;
+	}
+	
+section.col_center article h2.red{
+	color: #d62c35;
+	}
+	
+section.col_center article p.intro{
+	font: 18px 'citroenregular', Arial, Helvetica, sans-serif;
+	color: #191919;
+	padding: 10px 0 30px 0;
+	}
+section.col_center article p{
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #756e75;
+	display: inline-block;
+	padding-bottom: 15px;
+	}
+section.col_center article p img{
+	float: left;
+	padding-right: 10px;}                        	
+
+
+
+/*******    COLONNE DE DROITE  *************/
+
+#Article_3_col aside{
+	width: 140px;
+	float: right;
+	}
+#Article_3_col aside div{
+	width: 140px;
+	background: #e4dbc9;
+	box-sizing: border-box;
+	padding: 10px 10px 20px 10px;
+	margin-top: 20px;
+	}
+#Article_3_col aside div.bg_gray{
+	background: #756e75;
+	}
+#Article_3_col aside div.bg_gray h3{
+	font: 18px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #fafafa;
+	}
+#Article_3_col aside div h3{
+	font: 18px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #191919;
+	} 
+#Article_3_col aside div p{
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #756e75;
+	padding-top: 15px;
+	
+	}
+#Article_3_col aside div.bg_gray ul{
+	list-style: none;
+	padding: 16px 0;
+	}
+#Article_3_col aside div.bg_gray ul li a{
+	font: 12px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #fafafa;
+	}
+                        	
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
