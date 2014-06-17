@@ -422,16 +422,16 @@ a {
   padding-left: 5px;
 }
 
-#recherche article {
+#recherche .bloc_resultat {
   padding: 5px 0 0 0;
 }
 
-#recherche article img {
+#recherche .bloc_resultat img {
   float: left;
   margin-right: 10px;
 }
 
-#recherche article h1 {
+#recherche .bloc_resultat h1 {
   display: inline-block;
   color: #191919;
   text-transform: uppercase;
@@ -441,14 +441,14 @@ a {
   line-height: 18px;
 }
 
-#recherche article .date {
+#recherche .bloc_resultat .date {
   color: #b8b7b8;
   font-size: 12px;
   line-height: 8px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#recherche article p {
+#recherche .bloc_resultat p {
   margin-top: 18px;
   font-size: 12px;
   line-height: 18px;
@@ -456,7 +456,7 @@ a {
   color: #756e75;
 }
 
-#recherche article a {
+#recherche .bloc_resultat a {
   font-family: 'citroenitalic', Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: #d62c35;
