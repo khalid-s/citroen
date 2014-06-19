@@ -2,16 +2,15 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
         <!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
+         <script src="js/jquery-2.1.1.min.js"></script>
         <!--[if lt IE 8]>
             <script src="js/jquery-1.11.1.min.js"></script>
         <![endif]-->
-        <title>09_Blog_article</title>
+        <title>10_Blog</title>
         <link rel="stylesheet" href="css/style.css"  />
-        
     </head>
 
     <body>
@@ -89,10 +88,10 @@
             
         </header>
     	
-        <!------------------ CONTAINER ---------------------------------------------------------------------------- -->
+        <!------------------ CONTAINER ------------------------------------------------------------------------------>
         <div id="container">
         	
-            <!-------- File d'ariane --------- -->
+            <!-------- File d'ariane ----------->
         	<section id="file_dariane">
             	<div class="wrapper">
                 	<ul class="fil_dariane">
@@ -101,47 +100,120 @@
                     </ul>
                 </div>
             </section>
-            
-            <!-------- 2 COLONNES ------------ -->
+             <!--------Banner -------------->
+            <section id="banner_1col">
+            	<div class="wrapper">
+                    <div class="banner_img blog">
+                    	<img src="images_administrable/banner_blog.png" alt="blog" />
+                    	<h1>Blog & Actualités</h1>
+                        <h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lorem tortor, malesuada ac rhoncus sed, porttitor eu nisi. 
+                        Mauris quis ligula blandit, mollis turpis vel, tincidunt urna. Morbi eget porttitor odio, vel luctus ligula. 
+                        Integer vel diam tempus neque elementum pharetra. Nunc varius sed felis ut iaculis. Morbi at tellus lacinia, mollis
+                        magna ut imperdiet nisi. Fusce vel pellentesque tellus, id consequat quam. In turpis nisi, 
+                        fermentum in erat sed, luctus lacinia magna. Curabitur auctor et diam at pharetra.<br/><br/>
+                        <a href="#" class="btn_learnmore">Charte de bonne conduite</a>
+                        </p>
+                        
+                    </div>
+                </div>
+            </section>
+            <!-------- 2 COLONNES -------------->
             
             <section id="Article_2_col">
             	<div class="wrapper">
                 	
                     <section class="col_left">
-                    	<article>
-                        	<a href="#" class="btn_back_blog position_top">retour au blog</a>
-                            <a href="#" class="btn_back_blog position_bottom">retour au blog</a>
-                        
-                        	<!-- icon a+ / a- / print --> 
+                    	<article class="article_pagination">
+                            <!-- icon a+ / a- / print --> 
                             <ul class="btn_txt">
                                 <li><a href="#" class="btn_print"></a></li>
                                 <li><a href="#" class="btn_a_less">a-</a></li>
                                 <li><a href="#" class="btn_a_more">a+</a></li>
                             </ul>
-                        
-                        	<h1>Titre coeur de page</h1>
-                            <span>Publié par <a href="#" class="lien_red">Peugeot</a> le 15/04/2014</span>
-                         <!-- <h2 class="red">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec ligula bibendum, mollis erat.</h2>-->
-                            <p class="intro">
-                            	Phasellus rhoncus imperdiet interdum. In lacinia ipsum euismod, molestie turpis quis, sollicitudin enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                            	Mauris feugiat magna in odio venenatis egestas. Quisque ornare fermentum metus eu vulputate. In vehicula, nulla a fringilla viverra, risus sapien tempus sapien,
-                            	in tincidunt eros sapien vitae mi. Nulla quis laoreet metus
-                            </p>
-                            <p>
-                                <img src="images_administrable/picture_small_article.jpg" alt="lorem ipsum" />
-                                Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim. Suspendisse sit amet leo tellus.
-                                Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar, a laoreet ante tincidunt. Vivamus et sapien quis nulla dictum porttitor quis at quam.
-                                In hac habitasse platea dictumst. Nulla nec turpis purus. Vivamus non iaculis enim. Ut euismod varius odio id aliquet. Integer gravida sagittis libero Fusce in lobortis lectus. 
-                                Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim. Suspendisse sit amet leo tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus 
-                                eget massa pulvinar, a laoreet ante tincidunt.
-                                Vivamus et sapien quis nulla dictum porttitor quis at quam. In hac habitasse platea dictumst.
-                            </p>
-                            <h2 >Lorem ipsum dolor sit amet</h2>
-                            <p>
-                            	Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim. Suspendisse sit amet leo
-                            	tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar, a laoreet ante tincidunt.
-                            </p>
-                            <iframe width="660" height="361" src="https://www.youtube.com/embed/xe-GPiCb4O0" frameborder="0" allowfullscreen></iframe>
+    
+                            <div class="clear"></div>
+    
+                            <div id="champs">
+                                <label for="trie" class="first">trier par :</label>
+                                <div class="select">
+                                    <select name="trie" id="trie">
+                                        <option value="selectionner">Sélectionner</option>
+                                        <option value="option_1">option 1</option>
+                                        <option value="option_2">Option 2</option>
+                                    </select>
+                                </div>
+    
+                                <label for="ordre" class="margin020">order</label>
+                                <div class="select">
+                                    <select name="order" id="order">
+                                        <option value="order_1">Croissant</option>
+                                        <option value="order_2">order 2</option>
+                                        <option value="order_3">order 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr class="dotted">
+    		
+                            <div class="actu">
+                                <h2>lorem ipsum dolor</h2><br>
+                                <span class="date">Publié par <a href="#" class="lien_red">Peugeot</a> le 15/04/2014</span>
+                                <p>
+                                	<img src="images_administrable/blog_picture_1.png" alt="lorem ipsum" />
+                                    Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim.
+                                    Suspendisse sit amet leo tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar,
+                                    a laoreet ante tincidunt. Vivamus et sapien quis nulla dictum
+                                </p>
+                                <a href="#" class="btn_learnmore">Lire la suite</a>
+    
+                            </div>
+                            <div class="actu">
+                                <h2>lorem ipsum dolor</h2><br>
+                                <span class="date">Publié par <a href="#" class="lien_red">Peugeot</a> le 15/04/2014</span>
+                                <p>
+                                	<img src="images_administrable/blog_picture_1.png" alt="lorem ipsum" />
+                                    Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim.
+                                    Suspendisse sit amet leo tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar,
+                                    a laoreet ante tincidunt. Vivamus et sapien quis nulla dictum
+                                </p>
+                                <a href="#" class="btn_learnmore">Lire la suite</a>
+    
+                            </div>
+                            <div class="actu">
+                                <h2>lorem ipsum dolor</h2><br>
+                                <span class="date">Publié par <a href="#" class="lien_red">Peugeot</a> le 15/04/2014</span>
+                                <p>
+                                	<img src="images_administrable/blog_picture_1.png" alt="lorem ipsum" />
+                                    Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim.
+                                    Suspendisse sit amet leo tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar,
+                                    a laoreet ante tincidunt. Vivamus et sapien quis nulla dictum
+                                </p>
+                                <a href="#" class="btn_learnmore">Lire la suite</a>
+    
+                            </div>
+    
+                            
+                             
+                            <div id="pagination">
+                                <span class="btn">
+                                    <a href="#">précédent</a>
+                                </span>
+    
+                                <span class="page"><a href="#">1</a></span>
+                                <span class="page"><a href="#">2</a></span>
+                                <span class="page"><a href="#">3</a></span>
+                                <span class="page active"><a href="#">4</a></span>
+                                <span class="page"><a href="#">5</a></span>
+                                
+                                <span class="btn">
+                                    <a href="#">suivant</a>
+                                </span>
+                            </div>
+                            
+                            
+                            
+                            
+                            
                     	</article>
                         <div class="content_comment">
                         	<div class="header_comment">
@@ -190,7 +262,7 @@
                     
                 	<aside>
                     
-                    	<!-- ACTU 1 - -->
+                    	<!-- ACTU 1 --->
                     	<div class="actu">
                         	<h3><a href="#">Articles conseillés</a></h3>
                             <div class="item">
@@ -223,7 +295,7 @@
                             </div> 
                         </div>
                         
-                        <!-- ACTU 2 - -->
+                        <!-- ACTU 2 --->
                         <div class="actu">
                         	<h3><a href="#">Articles populaires</a></h3>
                             <div class="item">
@@ -265,10 +337,10 @@
                      
                 </div>
             </section>
-        </div><!-- END Container -- -->
+        </div><!-- END Container ---->
         
         
-        <!------------------ FOOTER ---------------------------------------------------------------------------- -->
+        <!------------------ FOOTER ------------------------------------------------------------------------------>
         <footer>
         	<div class="footer_1">
             	<div class=" wrapper">
@@ -311,7 +383,7 @@
                 </div>
             </div>
             <div class="footer_2">
-                <div class="wrapper">
+            	<div class="wrapper">
                     <ul>
                         <li><a href="#">Mentions légales</a></li>
                         <li><a href="#">-  Crédits</a></li>
@@ -322,10 +394,7 @@
             </div>
         </footer>
         <!-- JS TEXTAREA -------->
-        
-       <script src="js/jquery-2.1.1.min.js"></script>
-
-	   <script>
+       <script>
             $(function() {
                 $('#leTextarea').focus(function() {
                     if ($(this).val() == 'Participez à la discussion Au clic dans le champs, le bouton envoyer apparaît')
